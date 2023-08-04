@@ -76,7 +76,7 @@ export default function CharacterDetail({ character }) {
         </form>
       ) : (
         <div class="flex flex-col gap-4 justify-center">
-          <h1 class="text-4xl">{character.nom}</h1>
+          <h1 class="title">{character.nom}</h1>
           <p>Franchise: {character.franchise}</p>
           <p>Poids: {character.poids}</p>
           <p>Tier: {character.tier}</p>

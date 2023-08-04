@@ -8,10 +8,10 @@ export default function Home({ characters }) {
   );
 
   return (
-    <div class="flex flex-col">
-      <h1 class="text-center text-4xl">Personnages de Super Smash Bros. Ultimate</h1>
+    <div class="flex flex-col items-center">
+      <h1 class="title">Personnages de Super Smash Bros. Ultimate</h1>
       <input
-        class="border"
+        class="mb-12"
         type="text"
         placeholder="Rechercher par nom"
         value={searchTerm}
