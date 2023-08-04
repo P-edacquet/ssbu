@@ -8,15 +8,16 @@ export default function Home({ characters }) {
   );
 
   return (
-    <div>
-      <h1>Personnages de Super Smash Bros. Ultimate</h1>
+    <div class="flex flex-col">
+      <h1 class="text-center text-4xl">Personnages de Super Smash Bros. Ultimate</h1>
       <input
+        class="border"
         type="text"
         placeholder="Rechercher par nom"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <ul>
+      <ul class="flex flex-wrap gap-4 justify-center">
         {filteredCharacters.map((character) => (
           <li key={character.id}>
             <Link legacyBehavior href={`/characters/${character.id}`}>

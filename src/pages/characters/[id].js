@@ -55,7 +55,7 @@ export default function CharacterDetail({ character }) {
   return (
     <div>
       {editing ? (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} class="flex flex-col justify-center border">
           <div>
             <label>Nom:</label>
             <input type="text" name="nom" value={formData.nom} onChange={handleInputChange} />
@@ -68,13 +68,18 @@ export default function CharacterDetail({ character }) {
             <label>Franchise:</label>
             <input type="text" name="franchise" value={formData.franchise} onChange={handleInputChange} />
           </div>
+          <div>
+            <label>Tier:</label>
+            <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
+          </div>
           <button type="submit">Sauvegarder</button>
         </form>
       ) : (
-        <div>
-          <h1>{character.nom}</h1>
+        <div class="flex flex-col gap-4 justify-center">
+          <h1 class="text-4xl">{character.nom}</h1>
           <p>Franchise: {character.franchise}</p>
           <p>Poids: {character.poids}</p>
+          <p>Tier: {character.tier}</p>
           <button onClick={() => setEditing(true)}>Modifier</button>
           <button onClick={handleDelete}>Supprimer</button>
         </div>

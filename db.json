@@ -4,25 +4,85 @@
       "id": 1,
       "nom": "Mario",
       "poids": "98",
-      "franchise": "Mario"
+      "franchise": "Mario",
+      "tier": "A+"
     },
     {
       "id": 2,
       "nom": "Donkey Kong",
       "poids": 127,
-      "franchise": "Donkey Kong"
+      "franchise": "Donkey Kong",
+      "tier": "C-"
     },
     {
       "id": 3,
       "nom": "Link",
       "poids": 104,
-      "franchise": "The Legend of Zelda"
+      "franchise": "The Legend of Zelda",
+      "tier": "B-"
     },
     {
       "id": 4,
       "nom": "Samus",
       "poids": 108,
-      "franchise": "Metroid"
+      "franchise": "Metroid",
+      "tier": "A+"
+    },
+    {
+      "id": 5,
+      "nom": "Yoshi",
+      "poids": 104,
+      "franchise": "Yoshi",
+      "tier": "A+"
+    },
+    {
+      "id": 6,
+      "nom": "Kirby",
+      "poids": 79,
+      "franchise": "Kirby",
+      "tier": "D+"
+    },
+    {
+      "id": 7,
+      "nom": "Fox",
+      "poids": 77,
+      "franchise": "Star Fox",
+      "tier": "S"
+    },
+    {
+      "id": 8,
+      "nom": "Pikachu",
+      "poids": 79,
+      "franchise": "Pokémon",
+      "tier": "S-"
+    },
+    {
+      "id": 9,
+      "nom": "Luigi",
+      "poids": 97,
+      "franchise": "Mario",
+      "tier": "B+"
+    },
+    {
+      "id": 10,
+      "nom": "Ness",
+      "poids": 94,
+      "franchise": "EarthBound",
+      "tier": "B+"
+    },
+    {
+      "id": 11,
+      "nom": "Captain Falcon",
+      "poids": 104,
+      "franchise": "F-Zero",
+      "tier": "B+"
+    },
+    {
+      "id": 12,
+      "nom": "Rondoudou",
+      "poids": 104,
+      "franchise": "Pokémon",
+      "tier": "C+"
     }
   ]
 }
