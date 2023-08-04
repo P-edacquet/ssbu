@@ -1,0 +1,28 @@
+{
+  "personnages": [
+    {
+      "id": 1,
+      "nom": "Mario",
+      "poids": "98",
+      "franchise": "Mario"
+    },
+    {
+      "id": 2,
+      "nom": "Donkey Kong",
+      "poids": 127,
+      "franchise": "Donkey Kong"
+    },
+    {
+      "id": 3,
+      "nom": "Link",
+      "poids": 104,
+      "franchise": "The Legend of Zelda"
+    },
+    {
+      "id": 4,
+      "nom": "Samus",
+      "poids": 108,
+      "franchise": "Metroid"
+    }
+  ]
+}
