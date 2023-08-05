@@ -4,7 +4,11 @@
 
 @layer components {
 
-  .title {
+  section{
+    @apply flex flex-col gap-4 justify-center
+  }
+
+  h1 {
     @apply text-4xl mt-24 mb-12
   }
 

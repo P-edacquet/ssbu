@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import NewCharacterButton from '../components/NewCharacterButton';
 
 export default function Home({ characters }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -9,7 +10,8 @@ export default function Home({ characters }) {
 
   return (
     <div class="flex flex-col items-center">
-      <h1 class="title">Personnages de Super Smash Bros. Ultimate</h1>
+      <h1>Personnages de Super Smash Bros. Ultimate</h1>
+      <NewCharacterButton />
       <input
         class="mb-12"
         type="text"

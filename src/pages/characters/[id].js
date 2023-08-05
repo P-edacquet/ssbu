@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import BackButton from '../../components/BackButton';
 
 export default function CharacterDetail({ character }) {
   const router = useRouter();
@@ -73,16 +74,18 @@ export default function CharacterDetail({ character }) {
             <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
           </div>
           <button type="submit">Sauvegarder</button>
+          <BackButton />
         </form>
       ) : (
-        <div class="flex flex-col gap-4 justify-center">
-          <h1 class="title">{character.nom}</h1>
+        <section>
+          <h1>{character.nom}</h1>
           <p>Franchise: {character.franchise}</p>
           <p>Poids: {character.poids}</p>
           <p>Tier: {character.tier}</p>
           <button onClick={() => setEditing(true)}>Modifier</button>
           <button onClick={handleDelete}>Supprimer</button>
-        </div>
+          <BackButton />
+        </section>
       )}
     </div>
   );
