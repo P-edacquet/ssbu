@@ -74,7 +74,7 @@ export default function CharacterDetail({ character }) {
             <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
           </div>
           <button type="submit">Sauvegarder</button>
-          <BackButton />
+          <button type="button" onClick={() => setEditing(false)}>Annuler</button>
         </form>
       ) : (
         <section>
