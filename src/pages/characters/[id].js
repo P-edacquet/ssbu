@@ -54,37 +54,44 @@ export default function CharacterDetail({ character }) {
   };
 
   return (
-    <div>
+    <div class="flex justify-center text-center">
       {editing ? (
-        <form onSubmit={handleSubmit} class="flex flex-col justify-center border">
-          <div>
-            <label>Nom:</label>
-            <input type="text" name="nom" value={formData.nom} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label>Poids:</label>
-            <input type="number" name="poids" value={formData.poids} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label>Franchise:</label>
-            <input type="text" name="franchise" value={formData.franchise} onChange={handleInputChange} />
-          </div>
-          <div>
-            <label>Tier:</label>
-            <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
-          </div>
-          <button type="submit">Sauvegarder</button>
-          <button type="button" onClick={() => setEditing(false)}>Annuler</button>
-        </form>
+        <div class="flex flex-col text-center">
+          <h1>Modification {character.nom}</h1>
+          <form id="edit" onSubmit={handleSubmit} class="flex flex-col justify-center gap-4">
+            <div>
+              <label>Nom:</label>
+              <input type="text" name="nom" value={formData.nom} onChange={handleInputChange} />
+            </div>
+            <div>
+              <label>Poids:</label>
+              <input type="number" name="poids" value={formData.poids} onChange={handleInputChange} />
+            </div>
+            <div>
+              <label>Franchise:</label>
+              <input type="text" name="franchise" value={formData.franchise} onChange={handleInputChange} />
+            </div>
+            <div>
+              <label>Tier:</label>
+              <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
+            </div>
+            <div class="btn-group btn-group-vertical w-full mt-12">
+              <button type="submit">Sauvegarder</button>
+              <button type="button" onClick={() => setEditing(false)}>Annuler</button>
+            </div>
+          </form>
+        </div>
       ) : (
         <section>
           <h1>{character.nom}</h1>
           <p>Franchise: {character.franchise}</p>
           <p>Poids: {character.poids}</p>
           <p>Tier: {character.tier}</p>
-          <button onClick={() => setEditing(true)}>Modifier</button>
-          <button onClick={handleDelete}>Supprimer</button>
-          <BackButton />
+          <div class="btn-group btn-group-vertical mt-12">
+            <button onClick={() => setEditing(true)}>Modifier</button>
+            <button onClick={handleDelete}>Supprimer</button>
+            <BackButton />
+          </div>
         </section>
       )}
     </div>

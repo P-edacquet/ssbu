@@ -8,6 +8,6 @@ export default function BackButton() {
   };
 
   return (
-    <button onClick={handleGoBack}>Retour</button>
+    <button class="btn-outline" onClick={handleGoBack}>Retour</button>
   );
 }

@@ -40,9 +40,9 @@ export default function NewCharacter() {
   };
 
   return (
-    <div>
-      <h1>Créer un nouveau personnage</h1>
-      <form onSubmit={handleSubmit}>
+    <div class="flex flex-col justify-center items-center text-center">
+      <h1>Nouveau personnage</h1>
+      <form id="new" onSubmit={handleSubmit} class="flex flex-col justify-center gap-4 max-w-md">
         <div>
           <label>Nom:</label>
           <input type="text" name="nom" value={formData.nom} onChange={handleInputChange} />
@@ -59,8 +59,10 @@ export default function NewCharacter() {
           <label>Tier:</label>
           <input type="text" name="tier" value={formData.tier} onChange={handleInputChange} />
         </div>
-        <button type="submit">Créer</button>
-        <BackButton />
+        <div class="btn-group btn-group-vertical mt-12">
+          <button type="submit">Créer</button>
+          <BackButton />
+        </div>
       </form>
     </div>
   );
