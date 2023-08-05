@@ -83,6 +83,230 @@
       "poids": 104,
       "franchise": "Pokémon",
       "tier": "C+"
+    },
+    {
+      "id": 13,
+      "nom": "Peach",
+      "poids": 89,
+      "franchise": "Mario",
+      "tier": "S"
+    },
+    {
+      "id": 14,
+      "nom": "Bowser",
+      "poids": 135,
+      "franchise": "Mario",
+      "tier": "B-"
+    },
+    {
+      "id": 15,
+      "nom": "Ice Climbers",
+      "poids": 92,
+      "franchise": "Ice Climber",
+      "tier": "B-"
+    },
+    {
+      "id": 16,
+      "nom": "Sheik",
+      "poids": 78,
+      "franchise": "The Legend of Zelda",
+      "tier": "A-"
+    },
+    {
+      "id": 17,
+      "nom": "Zelda",
+      "poids": 85,
+      "franchise": "The Legend of Zelda",
+      "tier": "D+"
+    },
+    {
+      "id": 18,
+      "nom": "Dr. Mario",
+      "poids": 98,
+      "franchise": "Mario",
+      "tier": "D+"
+    },
+    {
+      "id": 19,
+      "nom": "Pichu",
+      "poids": 62,
+      "franchise": "Pokémon",
+      "tier": "B-"
+    },
+    {
+      "id": 20,
+      "nom": "Falco",
+      "poids": 82,
+      "franchise": "Star Fox",
+      "tier": "B+"
+    },
+    {
+      "id": 21,
+      "nom": "Marth",
+      "poids": 90,
+      "franchise": "Fire Emblem",
+      "tier": "B-"
+    },
+    {
+      "id": 22,
+      "nom": "Link Enfant",
+      "poids": 88,
+      "franchise": "The Legend of Zelda",
+      "tier": "A-"
+    },
+    {
+      "id": 23,
+      "nom": "Ganondorf",
+      "poids": 118,
+      "franchise": "The Legend of Zelda",
+      "tier": "D-"
+    },
+    {
+      "id": 24,
+      "nom": "Mewtwo",
+      "poids": 79,
+      "franchise": "Pokémon",
+      "tier": "C+"
+    },
+    {
+      "id": 25,
+      "nom": "Roy",
+      "poids": 95,
+      "franchise": "Fire Emblem",
+      "tier": "S"
+    },
+    {
+      "id": 26,
+      "nom": "Mr. Game & Watch",
+      "poids": 75,
+      "franchise": "Game & Watch",
+      "tier": "S-"
+    },
+    {
+      "id": 27,
+      "nom": "Meta Knight",
+      "poids": 80,
+      "franchise": "Kirby",
+      "tier": "B-"
+    },
+    {
+      "id": 28,
+      "nom": "Pit",
+      "poids": 96,
+      "franchise": "Kid Icarus",
+      "tier": "B-"
+    },
+    {
+      "id": 29,
+      "nom": "Samus Sans Armure",
+      "poids": 80,
+      "franchise": "Metroid",
+      "tier": "A+"
+    },
+    {
+      "id": 30,
+      "nom": "Wario",
+      "poids": 107,
+      "franchise": "Wario",
+      "tier": "A+"
+    },
+    {
+      "id": 31,
+      "nom": "Snake",
+      "poids": 106,
+      "franchise": "Metal Gear",
+      "tier": "S-"
+    },
+    {
+      "id": 32,
+      "nom": "Ike",
+      "poids": 107,
+      "franchise": "Fire Emblem",
+      "tier": "C-"
+    },
+    {
+      "id": 33,
+      "nom": "Carapuce",
+      "poids": 75,
+      "franchise": "Pokémon",
+      "tier": "A+"
+    },
+    {
+      "id": 34,
+      "nom": "Herbizarre",
+      "poids": 96,
+      "franchise": "Pokémon",
+      "tier": "A+"
+    },
+    {
+      "id": 35,
+      "nom": "Dracaufeu",
+      "poids": 116,
+      "franchise": "Pokémon",
+      "tier": "A+"
+    },
+    {
+      "id": 36,
+      "nom": "Diddy Kong",
+      "poids": 90,
+      "franchise": "Donkey Kong",
+      "tier": "S-"
+    },
+    {
+      "id": 37,
+      "nom": "Lucas",
+      "poids": 94,
+      "franchise": "EarthBound",
+      "tier": "C+"
+    },
+    {
+      "id": 38,
+      "nom": "Sonic",
+      "poids": 86,
+      "franchise": "Sonic The Hedgehog",
+      "tier": "S"
+    },
+    {
+      "id": 39,
+      "nom": "Roi Dadidou",
+      "poids": 127,
+      "franchise": "Kirby",
+      "tier": "D+"
+    },
+    {
+      "id": 40,
+      "nom": "Olimar",
+      "poids": 79,
+      "franchise": "Pikmin",
+      "tier": "A-"
+    },
+    {
+      "id": 41,
+      "nom": "Lucario",
+      "poids": 92,
+      "franchise": "Pokémon",
+      "tier": "C-"
+    },
+    {
+      "id": 42,
+      "nom": "R.O.B",
+      "poids": 106,
+      "franchise": "R.O.B",
+      "tier": "S"
+    },
+    {
+      "id": 43,
+      "nom": "Link Cartoon",
+      "poids": 91,
+      "franchise": "The Legend of Zelda",
+      "tier": "B-"
+    },
+    {
+      "id": 44,
+      "nom": "Wolf",
+      "poids": 92,
+      "franchise": "Star Fox",
+      "tier": "S-"
     }
   ]
 }
