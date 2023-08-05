@@ -1,24 +1,78 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import NewCharacterButton from '../components/NewCharacterButton';
 
+const getUniqueFranchises = (characters) => {
+  const franchises = characters.map((character) => character.franchise);
+  const uniqueFranchises = [...new Set(franchises)];
+  return ['Toutes franchises', ...uniqueFranchises.sort()];
+};
+
+const getUniqueTiers = (characters) => {
+  const tiers = characters.map((character) => character.tier);
+  const uniqueTiers = [...new Set(tiers)];
+  return ['Tous tiers', ...uniqueTiers.sort()];
+};
+
 export default function Home({ characters }) {
   const [searchTerm, setSearchTerm] = useState('');
-  const filteredCharacters = characters.filter(character =>
-    character.nom.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const [franchiseFilter, setFranchiseFilter] = useState('Toutes franchises');
+  const [tierFilter, setTierFilter] = useState('Tous tiers');
+  const [filteredCharacters, setFilteredCharacters] = useState(characters);
+
+  const uniqueFranchises = getUniqueFranchises(characters);
+  const uniqueTiers = getUniqueTiers(characters);
+
+  useEffect(() => {
+    const filteredBySearch = characters.filter((character) =>
+      character.nom.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    const filteredByFranchise = franchiseFilter === 'Toutes franchises'
+      ? filteredBySearch
+      : filteredBySearch.filter(character => character.franchise === franchiseFilter);
+
+    const filteredByTier = tierFilter === 'Tous tiers'
+      ? filteredByFranchise
+      : filteredByFranchise.filter(character => character.tier === tierFilter);
+
+    setFilteredCharacters(filteredByTier);
+  }, [searchTerm, franchiseFilter, tierFilter]);
 
   return (
     <div class="flex flex-col items-center">
       <h1>Personnages de Super Smash Bros. Ultimate</h1>
       <NewCharacterButton />
-      <input
-        class="mb-12"
-        type="text"
-        placeholder="Rechercher par nom"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+      <div>
+        <label>Rechercher par nom:</label>
+        <input
+          class="mb-12"
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+      <div>
+        <label>Filtrer par franchise:</label>
+        <select value={franchiseFilter} onChange={(e) => setFranchiseFilter(e.target.value)}>
+          {uniqueFranchises.map((franchise) => (
+            <option key={franchise} value={franchise}>
+              {franchise}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div>
+        <label>Filtrer par tier:</label>
+        <select value={tierFilter} onChange={(e) => setTierFilter(e.target.value)}>
+          {uniqueTiers.map((tier) => (
+            <option key={tier} value={tier}>
+              {tier}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <ul class="flex flex-wrap gap-4 justify-center">
         {filteredCharacters.map((character) => (
           <li key={character.id}>
