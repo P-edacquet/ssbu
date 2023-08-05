@@ -5,7 +5,9 @@
 @layer components {
 
   section{
-    @apply flex flex-col gap-4 justify-center
+    &#filter{
+      @apply flex flex-wrap gap-4 mt-12
+    }
   }
 
   h1 {
@@ -14,6 +16,10 @@
 
   input{
     @apply input input-bordered input-primary input-sm w-full max-w-xs
+  }
+
+  select{
+    @apply select select-bordered select-primary select-sm w-full max-w-xs
   }
 
   button{

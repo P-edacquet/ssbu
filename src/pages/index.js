@@ -32,35 +32,43 @@ export default function Home({ characters }) {
     <div class="flex flex-col items-center">
       <h1>Personnages de Super Smash Bros. Ultimate</h1>
       <NewCharacterButton />
-      <div>
-        <label>Rechercher par nom:</label>
-        <input
-          class="mb-12"
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Filtrer par franchise:</label>
-        <select value={franchiseFilter} onChange={(e) => setFranchiseFilter(e.target.value)}>
-          {uniqueFranchises.map((franchise) => (
-            <option key={franchise} value={franchise}>
-              {franchise}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div>
-        <label>Filtrer par tier:</label>
-        <select value={tierFilter} onChange={(e) => setTierFilter(e.target.value)}>
-          {uniqueTiers.map((tier) => (
-            <option key={tier} value={tier}>
-              {tier}
-            </option>
-          ))}
-        </select>
-      </div>
+      <section id="filter">
+        <div>
+          <label>Nom :</label>
+          <input
+            class="mb-12"
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Franchise :</label>
+          <select
+            value={franchiseFilter}
+            onChange={(e) => setFranchiseFilter(e.target.value)}
+          >
+            {uniqueFranchises.map((franchise) => (
+              <option key={franchise} value={franchise}>
+                {franchise}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label>Tier :</label>
+          <select
+            value={tierFilter}
+            onChange={(e) => setTierFilter(e.target.value)}
+          >
+            {uniqueTiers.map((tier) => (
+              <option key={tier} value={tier}>
+                {tier}
+              </option>
+            ))}
+          </select>
+        </div>
+      </section>
 
       <ul class="flex flex-wrap gap-4 justify-center">
         {filteredCharacters.map((character) => (
